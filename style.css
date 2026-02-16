@@ -1,0 +1,324 @@
+:root {
+    /* FolioFlix Light Palette (Default) */
+    --primary-bg: #ffffff;
+    --secondary-bg: #f8fafc;
+    --accent-purple: #6366f1;
+    --accent-orange: #f59e0b;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --card-bg: #ffffff;
+    --card-border: rgba(0, 0, 0, 0.05);
+    --nav-bg: rgba(255, 255, 255, 0.8);
+    --shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="dark"] {
+    --primary-bg: #0f172a;
+    --secondary-bg: #1e293b;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --card-bg: #1e293b;
+    --card-border: rgba(255, 255, 255, 0.05);
+    --nav-bg: rgba(15, 23, 42, 0.8);
+    --shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-bg);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Force Theme Colors over Bootstrap */
+.text-main,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-main) !important;
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+.text-secondary {
+    color: var(--text-muted) !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary-bg) !important;
+}
+
+.bg-light-subtle {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-purple);
+    border-radius: 10px;
+}
+
+/* Background Shapes */
+.bg-shapes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.15;
+}
+
+.shape-1 {
+    top: -10%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: var(--accent-purple);
+}
+
+.shape-2 {
+    bottom: -10%;
+    left: -10%;
+    width: 400px;
+    height: 400px;
+    background: var(--accent-orange);
+}
+
+/* Navbar */
+.glass-nav {
+    background: var(--nav-bg);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--card-border);
+    padding: 1rem 0;
+    z-index: 1000;
+}
+
+.nav-link {
+    color: var(--text-muted) !important;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: var(--transition);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent-purple) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    animation: fadeInUp 1s ease forwards;
+}
+
+.hero-badge {
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--accent-purple);
+    padding: 8px 16px;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+.hero-title {
+    font-size: clamp(3rem, 10vw, 5.5rem);
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    color: var(--text-main);
+    margin: 20px 0;
+}
+
+.hero-title span {
+    color: var(--accent-purple);
+}
+
+.hero-subtitle {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    background: var(--secondary-bg);
+    border: 1px solid var(--card-border);
+    color: var(--text-main);
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+}
+
+.theme-toggle:hover {
+    transform: rotate(15deg);
+    background: var(--accent-purple);
+    color: white;
+}
+
+/* Cards */
+.folio-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 24px;
+    padding: 2.5rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    height: 100%;
+}
+
+.folio-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-purple);
+    box-shadow: 0 20px 40px -10px rgba(99, 102, 241, 0.15);
+}
+
+/* Buttons */
+.btn-folio {
+    padding: 14px 32px;
+    border-radius: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.btn-primary {
+    background: var(--accent-purple);
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+}
+
+.btn-outline {
+    border: 2px solid var(--accent-purple);
+    color: var(--accent-purple);
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background: var(--accent-purple);
+    color: white;
+}
+
+/* Sections */
+section {
+    padding: 120px 0;
+}
+
+.section-label {
+    color: var(--accent-orange);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.section-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    margin-bottom: 50px;
+    letter-spacing: -1px;
+}
+
+/* Skills */
+.skill-tag {
+    background: var(--secondary-bg);
+    padding: 12px 24px;
+    border-radius: 16px;
+    font-weight: 600;
+    margin: 6px;
+    display: inline-block;
+    border: 1px solid var(--card-border);
+    transition: var(--transition);
+}
+
+.skill-tag:hover {
+    background: var(--accent-purple);
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: var(--transition);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 3.5rem;
+        letter-spacing: -1px;
+    }
+
+    section {
+        padding: 80px 0;
+    }
+}

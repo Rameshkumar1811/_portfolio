@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rameshkumar M | Portfolio</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg glass-nav sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-main fw-bold fs-3" href="#">RK <span
+                    style="color: var(--accent-purple);">Portfolio</span></a>
+
+            <div class="d-flex align-items-center gap-3  order-lg-3">
+                <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
+                    <i data-lucide="sun" id="themeIcon"></i>
+                </button>
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item ms-lg-3"><a href="#contact"
+                            class="btn-folio btn-primary py-2 px-4 shadow-sm">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <span class="hero-badge mb-3">Hello, I Am</span>
+                    <h1 class="hero-title">RAMESH<span>KUMAR</span></h1>
+                    <h2 class="hero-subtitle mb-4">Software Developer<span class="typing-text"></span></h2>
+                    <p class="lead text-muted mb-5" style="max-width: 500px;">
+                        I create beautiful, high-performance digital experiences that people love. Specialized in
+                        Enterprise Backend & Flutter.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#projects" class="btn-folio btn-primary">Check Out Projects</a>
+                        <a href="#about" class="btn-folio btn-outline">More About Me</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0 text-center position-relative">
+                    <div class="reveal">
+                        <!-- <img src="https://www.flaticon.com/free-icon/developer_4661320" alt="Rameshkumar"
+                            class="img-fluid rounded-circle border border-5 border-white shadow-lg mx-auto"
+                            style="max-width: 400px; background: var(--accent-purple);"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-secondary position-relative">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="reveal">
+                        <h2 class="section-title mb-4">Professional <br> Summary</h2>
+                        <div class="folio-card border-0 bg-transparent p-0">
+                            <p class="lead text-muted">
+                                Dynamic Software Developer with a proven track record at <span
+                                    class="text-main fw-bold">MazeWorks Solutions Pvt Ltd</span>, enhancing software
+                                efficiency through expert troubleshooting and modernizing legacy code.
+                            </p>
+                            <p class="text-muted mt-3">
+                                Proficient in Laravel and PHP. I excel in delivering robust solutions while
+                                collaborating effectively with teams to drive project success.
+                            </p>
+                            <div class="mt-4 pt-3 border-top">
+                                <div class="d-flex align-items-center gap-3">
+                                    <i data-lucide="award" class="text-warning" size="32"></i>
+                                    <div>
+                                        <h6 class="fw-bold mb-0">Lead Developer</h6>
+                                        <small class="text-muted">Promoted from Internship</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="reveal ps-lg-5">
+                        <h3 class="h5 mb-4 fw-bold">Education</h3>
+                        <div class="folio-card mb-3 p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <div>
+                                    <h5 class="fw-bold mb-1">Master of Computer Applications (MCA)</h5>
+                                    <p class="text-muted mb-0">Ayya Nadar Janaki Ammal College</p>
+                                </div>
+                                <span class="badge bg-primary-subtle text-primary rounded-pill">2023</span>
+                            </div>
+                            <p class="mb-0 text-small text-muted fw-medium">Grade: 68% (First Class)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label">Technical Arsenal</span>
+                <h2 class="section-title">Core Competencies</h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <!-- Backend -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="folio-card reveal h-100 text-center">
+                        <div class="mb-4 d-inline-flex align-items-center justify-content-center rounded-circle bg-primary-subtle text-primary"
+                            style="width: 64px; height: 64px;">
+                            <i data-lucide="server" size="32"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Backend</h4>
+                        <ul class="list-unstyled text-muted small mb-0">
+                            <li class="mb-2">Laravel Framework</li>
+                            <li class="mb-2">PHP 8.x</li>
+                            <li class="mb-2">RESTful APIs</li>
+                            <li class="mb-2">MVC Architecture</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Database -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="folio-card reveal h-100 text-center"
+                        style="border-bottom: 4px solid var(--accent-orange);">
+                        <div class="mb-4 d-inline-flex align-items-center justify-content-center rounded-circle bg-warning-subtle text-warning"
+                            style="width: 64px; height: 64px;">
+                            <i data-lucide="database" size="32"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Database</h4>
+                        <ul class="list-unstyled text-muted small mb-0">
+                            <li class="mb-2">MySQL</li>
+                            <li class="mb-2">Query Optimization</li>
+                            <li class="mb-2">Database Design</li>
+                            <li class="mb-2">Data Integrity</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Frontend -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="folio-card reveal h-100 text-center">
+                        <div class="mb-4 d-inline-flex align-items-center justify-content-center rounded-circle bg-info-subtle text-info"
+                            style="width: 64px; height: 64px;">
+                            <i data-lucide="layout" size="32"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Frontend</h4>
+                        <ul class="list-unstyled text-muted small mb-0">
+                            <li class="mb-2">HTML5 & CSS3</li>
+                            <li class="mb-2">Bootstrap 5</li>
+                            <li class="mb-2">JavaScript ES6+</li>
+                            <li class="mb-2">Responsive Design</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Mobile & Tools -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="folio-card reveal h-100 text-center">
+                        <div class="mb-4 d-inline-flex align-items-center justify-content-center rounded-circle bg-danger-subtle text-danger"
+                            style="width: 64px; height: 64px;">
+                            <i data-lucide="smartphone" size="32"></i>
+                        </div>
+                        <h4 class="fw-bold mb-3">Mobile & Tools</h4>
+                        <ul class="list-unstyled text-muted small mb-0">
+                            <li class="mb-2">Flutter & Dart</li>
+                            <li class="mb-2">Git (GitHub/GitLab)</li>
+                            <li class="mb-2">XAMPP</li>
+                            <li class="mb-2">Cross-platform Dev</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="bg-secondary">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <span class="section-label mb-2 d-block text-center">Career Journey</span>
+                    <h2 class="section-title text-center mb-5">Professional Experience</h2>
+
+                    <div class="folio-card reveal">
+                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-start mb-4">
+                            <div>
+                                <h3 class="fw-bold h4 mb-1">Software Developer</h3>
+                                <p class="text-primary fw-bold mb-0">MazeWorks Solutions Pvt Ltd</p>
+                                <small class="text-muted">Chennai, India</small>
+                            </div>
+                            <span class="badge bg-primary text-white rounded-pill px-3 py-2 mt-2 mt-md-0">Feb 2023 -
+                                Present</span>
+                        </div>
+                        <ul class="text-muted mb-0 list-unstyled">
+                            <li class="d-flex mb-3">
+                                <i data-lucide="check-circle-2" class="text-success me-3 mt-1 flex-shrink-0"
+                                    size="18"></i>
+                                <span>Spearheaded software optimization initiatives, resulting in <strong>35%
+                                        improvement</strong> in application performance through systematic code
+                                    refactoring.</span>
+                            </li>
+                            <li class="d-flex mb-3">
+                                <i data-lucide="check-circle-2" class="text-success me-3 mt-1 flex-shrink-0"
+                                    size="18"></i>
+                                <span>Successfully led modernization of legacy systems, migrating critical codebases to
+                                    contemporary standards while maintaining <strong>100% data
+                                        integrity</strong>.</span>
+                            </li>
+                            <li class="d-flex mb-3">
+                                <i data-lucide="check-circle-2" class="text-success me-3 mt-1 flex-shrink-0"
+                                    size="18"></i>
+                                <span>Architected and delivered enterprise-grade <strong>Invoice Management
+                                        System</strong> serving 500+ concurrent users with robust MySQL
+                                    optimization.</span>
+                            </li>
+                            <li class="d-flex mb-3">
+                                <i data-lucide="check-circle-2" class="text-success me-3 mt-1 flex-shrink-0"
+                                    size="18"></i>
+                                <span>Designed and implemented comprehensive RESTful API architecture with JWT
+                                    authentication for seamless integration.</span>
+                            </li>
+                            <li class="d-flex">
+                                <i data-lucide="check-circle-2" class="text-success me-3 mt-1 flex-shrink-0"
+                                    size="18"></i>
+                                <span>Mentored junior developers and contributed to a <strong>25% reduction</strong> in
+                                    development cycle time.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">Key Projects</h2>
+            </div>
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-lg-6">
+                    <div class="folio-card reveal h-100 p-0 overflow-hidden d-flex flex-column">
+                        <div class="p-4 flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary-subtle text-primary">Web Application</span>
+                                <i data-lucide="file-text" class="text-muted"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Vendor Invoice Management System</h4>
+                            <p class="text-muted mb-4">A comprehensive system for automatic workflow processing and
+                                real-time financial reporting capabilities.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="badge border text-muted">Laravel</span>
+                                <span class="badge border text-muted">MySQL</span>
+                                <span class="badge border text-muted">Automated Workflows</span>
+                            </div>
+                        </div>
+                        <div class="p-4 border-top bg-light-subtle mt-auto">
+                            <small class="text-success fw-bold"><i data-lucide="trending-up" size="14" class="me-1"></i>
+                                40% Query Response Improvement</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-lg-6">
+                    <div class="folio-card reveal h-100 p-0 overflow-hidden d-flex flex-column">
+                        <div class="p-4 flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-warning-subtle text-warning">Mobile App</span>
+                                <i data-lucide="package" class="text-muted"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Advanced Stock Maintenance</h4>
+                            <p class="text-muted mb-4">Cross-platform mobile application featuring real-time inventory
+                                tracking, automated alerts, and analytics dashboard.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="badge border text-muted">Flutter</span>
+                                <span class="badge border text-muted">Dart</span>
+                                <span class="badge border text-muted">Offline Sync</span>
+                            </div>
+                        </div>
+                        <div class="p-4 border-top bg-light-subtle mt-auto">
+                            <small class="text-success fw-bold"><i data-lucide="wifi-off" size="14" class="me-1"></i>
+                                Offline Capability Implemented</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-lg-6">
+                    <div class="folio-card reveal h-100 p-0 overflow-hidden d-flex flex-column">
+                        <div class="p-4 flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-danger-subtle text-danger">Mobile App</span>
+                                <i data-lucide="truck" class="text-muted"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Dispatch Verification App</h4>
+                            <p class="text-muted mb-4">Built for streamlined operations with GPS integration and
+                                real-time status tracking for operational efficiency.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="badge border text-muted">Flutter</span>
+                                <span class="badge border text-muted">GPS Integration</span>
+                                <span class="badge border text-muted">Real-time DB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="col-lg-6">
+                    <div class="folio-card reveal h-100 p-0 overflow-hidden d-flex flex-column">
+                        <div class="p-4 flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-info-subtle text-info">Maintenance</span>
+                                <i data-lucide="settings" class="text-muted"></i>
+                            </div>
+                            <h4 class="fw-bold mb-3">Stripping & Stack Maintenance</h4>
+                            <p class="text-muted mb-4">Developed efficient tracking application for industrial
+                                maintenance schedules and logs.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="badge border text-muted">Flutter</span>
+                                <span class="badge border text-muted">Dart</span>
+                                <span class="badge border text-muted">Efficiency</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="folio-card reveal mx-auto text-center"
+                style="max-width: 900px; padding: 5rem 2rem; border-top: 8px solid var(--accent-purple);">
+                <span class="section-label">Get In Touch</span>
+                <h2 class="section-title">Ready to Build Something Unique?</h2>
+                <p class="text-muted mb-5 mx-auto" style="max-width: 600px;">
+                    Whether you have an idea for a startup or an enterprise system, I'm here to help you build it right.
+                </p>
+                <div class="d-flex flex-wrap justify-content-center gap-4">
+                    <a href="mailto:rameshkraja18@gmail.com"
+                        class="btn-folio btn-primary d-flex align-items-center gap-2">
+                        <i data-lucide="mail"></i> Start Conversation
+                    </a>
+                    <a href="tel:+916374280147" class="btn-folio btn-outline d-flex align-items-center gap-2">
+                        <i data-lucide="phone"></i> Call Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5 text-center text-muted border-top">
+        <p>© 2026 FolioFlix. Crafted with ❤️ by <span class="fw-bold text-main">Rameshkumar M</span></p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Theme Toggle Logic
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const html = document.documentElement;
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', savedTheme);
+        updateIcon(savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateIcon(newTheme);
+        });
+
+        function updateIcon(theme) {
+            const iconName = theme === 'light' ? 'moon' : 'sun';
+            themeIcon.setAttribute('data-lucide', iconName);
+            lucide.createIcons(); // Refresh icons
+        }
+
+        // Typing Effect
+        const subtitle = document.querySelector('.typing-text');
+        const phrases = [" focused on Scale.", " addicted to Performance.", " loving Clean Code."];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function type() {
+            const current = phrases[phraseIndex];
+            if (isDeleting) {
+                subtitle.textContent = current.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                subtitle.textContent = current.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let typeSpeed = isDeleting ? 50 : 100;
+
+            if (!isDeleting && charIndex === current.length) {
+                isDeleting = true;
+                typeSpeed = 2000;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                typeSpeed = 500;
+            }
+
+            setTimeout(type, typeSpeed);
+        }
+
+        setTimeout(type, 1500);
+
+        // Reveal animations on scroll
+        const reveal = () => {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(el => {
+                const windowHeight = window.innerHeight;
+                const elementTop = el.getBoundingClientRect().top;
+                const elementVisible = 100;
+                if (elementTop < windowHeight - elementVisible) {
+                    el.classList.add('active');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', reveal);
+        reveal();
+    </script>
+</body>
+
+</html>
