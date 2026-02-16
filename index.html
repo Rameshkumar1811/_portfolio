@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rameshkumar M | Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -67,7 +68,14 @@
                     </p>
                     <div class="d-flex gap-3">
                         <a href="#projects" class="btn-folio btn-primary">Check Out Projects</a>
-                        <a href="#about" class="btn-folio btn-outline">More About Me</a>
+                        <a href="#" class="btn-folio btn-outline py-2" data-bs-toggle="modal"
+                            data-bs-target="#projectModal" data-title="Advanced Stock Maintenance"
+                            data-category="Mobile App (Flutter)"
+                            data-desc="Cross-platform mobile application featuring real-time inventory tracking, automated alerts, and analytics dashboard. Designed for global supply chains with offline capabilities."
+                            data-features="Real-time Inventory Tracking||Automated Low-Stock Alerts||Offline Data Synchronization||Analytics Dashboard"
+                            data-tech="Flutter, Dart, REST API, SQLite">
+                            View Case Study
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-6 mt-5 mt-lg-0 text-center position-relative">
@@ -272,8 +280,10 @@
                 <span class="section-label">Portfolio</span>
                 <h2 class="section-title">Key Projects</h2>
             </div>
-            <div class="row g-4">
-                <!-- Project 1 -->
+            <!-- Web Applications -->
+            <h3 class="h4 fw-bold text-primary mb-4 border-bottom pb-2 d-inline-block">Web Applications</h3>
+            <div class="row g-4 mb-5">
+                <!-- Project: Vendor Invoice (Web) -->
                 <div class="col-lg-6">
                     <div class="folio-card reveal h-100 p-0 overflow-hidden d-flex flex-column">
                         <div class="p-4 flex-grow-1">
@@ -282,44 +292,61 @@
                                 <i data-lucide="file-text" class="text-muted"></i>
                             </div>
                             <h4 class="fw-bold mb-3">Vendor Invoice Management System</h4>
-                            <p class="text-muted mb-4">A comprehensive system for automatic workflow processing and
-                                real-time financial reporting capabilities.</p>
+                            <p class="text-muted mb-4">Developed a web-based Vendor Invoice Management System including
+                                automated e-Invoice/E-Way Bill API integration and Digital Signature (DSC) support.</p>
                             <div class="d-flex flex-wrap gap-2 mb-4">
                                 <span class="badge border text-muted">Laravel</span>
                                 <span class="badge border text-muted">MySQL</span>
-                                <span class="badge border text-muted">Automated Workflows</span>
+                                <span class="badge border text-muted">Digital Signatures</span>
                             </div>
                         </div>
                         <div class="p-4 border-top bg-light-subtle mt-auto">
-                            <small class="text-success fw-bold"><i data-lucide="trending-up" size="14" class="me-1"></i>
-                                40% Query Response Improvement</small>
+                            <button class="btn-folio btn-outline py-2 w-100" data-bs-toggle="modal"
+                                data-bs-target="#projectModal" data-title="Vendor Invoice Management System"
+                                data-category="Web Application (Manufacturing)"
+                                data-desc="This web application is a complete solution for manufacturing companies to manage the end-to-end invoicing process. It streamlines the workflow between the manufacturer and the buyer by automating tax compliance (GST) and logistics documentation. The system ensures that every product leaving the factory is accompanied by legally compliant, digitally signed documentation."
+                                data-features="Compliance Integration (e-Invoice/E-Way Bill)||Automated ASN (Advanced Shipping Notice)||Advanced Data Handling (Excel Import/Export)||Digital Signatures (DSC Integration)||Logistics Coordination (Verified Invoice Copies)"
+                                data-tech="Laravel, MySQL, REST APIs (GST/E-Way), Digital Signature API, Excel Parsers">
+                                View Case Study
+                            </button>
                         </div>
                     </div>
                 </div>
-                <!-- Project 2 -->
+            </div>
+
+            <!-- Mobile Applications -->
+            <h3 class="h4 fw-bold text-warning mb-4 border-bottom pb-2 d-inline-block">Mobile Applications</h3>
+            <div class="row g-4">
+                <!-- Project: NTC Route Survey (Mobile) -->
                 <div class="col-lg-6">
                     <div class="folio-card reveal h-100 p-0 overflow-hidden d-flex flex-column">
                         <div class="p-4 flex-grow-1">
                             <div class="d-flex justify-content-between align-items-center mb-3">
-                                <span class="badge bg-warning-subtle text-warning">Mobile App</span>
-                                <i data-lucide="package" class="text-muted"></i>
+                                <span class="badge bg-success-subtle text-success">Logistics App</span>
+                                <i data-lucide="map" class="text-muted"></i>
                             </div>
-                            <h4 class="fw-bold mb-3">Advanced Stock Maintenance</h4>
-                            <p class="text-muted mb-4">Cross-platform mobile application featuring real-time inventory
-                                tracking, automated alerts, and analytics dashboard.</p>
+                            <h4 class="fw-bold mb-3">NTC Route Survey</h4>
+                            <p class="text-muted mb-4">Specialized ODC logistics solution for route scouting and hurdle
+                                identification.</p>
                             <div class="d-flex flex-wrap gap-2 mb-4">
                                 <span class="badge border text-muted">Flutter</span>
-                                <span class="badge border text-muted">Dart</span>
-                                <span class="badge border text-muted">Offline Sync</span>
+                                <span class="badge border text-muted">SQLite</span>
+                                <span class="badge border text-muted">Google Maps</span>
                             </div>
                         </div>
                         <div class="p-4 border-top bg-light-subtle mt-auto">
-                            <small class="text-success fw-bold"><i data-lucide="wifi-off" size="14" class="me-1"></i>
-                                Offline Capability Implemented</small>
+                            <button class="btn-folio btn-outline py-2 w-100" data-bs-toggle="modal"
+                                data-bs-target="#projectModal" data-title="NTC Route Survey Application"
+                                data-category="Logistics / Mobile App"
+                                data-desc="The NTC Route Survey app is a specialized logistics solution designed for NTC Logistics. Before a massive consignment (Over-Dimensional Cargo) is moved, a survey team uses this app to scout the intended path. It allows users to identify hurdles like low-clearance bridges, narrow roads, or sharp turns, sending real-time data to operations."
+                                data-features="Hurdle Identification (Bridges, Lines)||Media Documentation (Photo Capture)||Dual-Team Communication (Sync)||Offline Mode (SQLite)||Auto-Sync Capabilities"
+                                data-tech="Flutter, Dart, SQLite, Google Maps API, RESTful APIs">
+                                View Case Study
+                            </button>
                         </div>
                     </div>
                 </div>
-                <!-- Project 3 -->
+                <!-- Project: Dispatch Verification (Mobile) -->
                 <div class="col-lg-6">
                     <div class="folio-card reveal h-100 p-0 overflow-hidden d-flex flex-column">
                         <div class="p-4 flex-grow-1">
@@ -336,9 +363,19 @@
                                 <span class="badge border text-muted">Real-time DB</span>
                             </div>
                         </div>
+                        <div class="p-4 border-top bg-light-subtle mt-auto">
+                            <button class="btn-folio btn-outline py-2 w-100" data-bs-toggle="modal"
+                                data-bs-target="#projectModal" data-title="Dispatch Verification App"
+                                data-category="Mobile App (Flutter)"
+                                data-desc="Built for streamlined operations with GPS integration and real-time status tracking. Enables efficient dispatch management and route verification."
+                                data-features="GPS Integration||Real-time Status Tracking||Operational Analytics||Driver Management"
+                                data-tech="Flutter, Google Maps API, Firebase, Dart">
+                                View Case Study
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <!-- Project 4 -->
+                <!-- Project: Stripping & Stack (Mobile) -->
                 <div class="col-lg-6">
                     <div class="folio-card reveal h-100 p-0 overflow-hidden d-flex flex-column">
                         <div class="p-4 flex-grow-1">
@@ -354,6 +391,16 @@
                                 <span class="badge border text-muted">Dart</span>
                                 <span class="badge border text-muted">Efficiency</span>
                             </div>
+                        </div>
+                        <div class="p-4 border-top bg-light-subtle mt-auto">
+                            <button class="btn-folio btn-outline py-2 w-100" data-bs-toggle="modal"
+                                data-bs-target="#projectModal" data-title="Stripping & Stack Maintenance"
+                                data-category="Mobile App (Flutter)"
+                                data-desc="Developed efficient tracking application for industrial maintenance schedules and logs. improving operational uptime."
+                                data-features="Maintenance Scheduling||Log Tracking||Efficiency Analytics||Role-based Access"
+                                data-tech="Flutter, Dart, SQLite, Local Storage">
+                                View Case Study
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -387,6 +434,47 @@
     <footer class="py-5 text-center text-muted border-top">
         <p>© 2026 FolioFlix. Crafted with ❤️ by <span class="fw-bold text-main">Rameshkumar M</span></p>
     </footer>
+
+    <!-- Project Details Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow-lg" style="background: var(--card-bg); color: var(--text-main);">
+                <div class="modal-header border-bottom border-secondary">
+                    <div>
+                        <span class="badge bg-primary-subtle text-primary mb-2" id="modalCategory">Category</span>
+                        <h3 class="modal-title fw-bold" id="modalTitle">Project Title</h3>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        style="filter: invert(var(--theme-invert));"></button>
+                </div>
+                <div class="modal-body p-4 p-lg-5">
+                    <h5 class="fw-bold mb-3 d-flex align-items-center">
+                        <i data-lucide="info" class="me-2 text-primary"></i> Project Overview
+                    </h5>
+                    <p class="text-muted mb-4" id="modalDesc">Description goes here...</p>
+
+                    <h5 class="fw-bold mb-3 d-flex align-items-center">
+                        <i data-lucide="zap" class="me-2 text-warning"></i> Core Features
+                    </h5>
+                    <ul class="list-unstyled text-muted mb-4" id="modalFeatures">
+                        <!-- Features populated by JS -->
+                    </ul>
+
+                    <h5 class="fw-bold mb-3 d-flex align-items-center">
+                        <i data-lucide="code-2" class="me-2 text-success"></i> Tech Stack
+                    </h5>
+                    <div class="d-flex flex-wrap gap-2" id="modalTech">
+                        <!-- Tech tags populated by JS -->
+                    </div>
+                </div>
+                <div class="modal-footer border-top border-secondary">
+                    <button type="button" class="btn btn-folio btn-outline" data-bs-dismiss="modal">Close
+                        Details</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -469,6 +557,40 @@
 
         window.addEventListener('scroll', reveal);
         reveal();
+        // Project Modal Logic
+        const projectModal = document.getElementById('projectModal');
+        if (projectModal) {
+            projectModal.addEventListener('show.bs.modal', event => {
+                const button = event.relatedTarget;
+
+                // Extract info from data-* attributes
+                const title = button.getAttribute('data-title');
+                const category = button.getAttribute('data-category');
+                const desc = button.getAttribute('data-desc');
+                const features = button.getAttribute('data-features').split('||');
+                const tech = button.getAttribute('data-tech').split(',');
+
+                // Update Modal Content
+                document.getElementById('modalTitle').textContent = title;
+                document.getElementById('modalCategory').textContent = category;
+                document.getElementById('modalDesc').textContent = desc;
+
+                // Populate Features
+                const featureList = document.getElementById('modalFeatures');
+                featureList.innerHTML = features.map(feature =>
+                    `<li class="mb-2 d-flex align-items-start"><i data-lucide="check" class="me-2 text-primary mt-1" size="16"></i> ${feature}</li>`
+                ).join('');
+
+                // Populate Tech
+                const techContainer = document.getElementById('modalTech');
+                techContainer.innerHTML = tech.map(t =>
+                    `<span class="badge border text-muted px-3 py-2">${t.trim()}</span>`
+                ).join('');
+
+                // Refresh Icons inside modal
+                setTimeout(() => lucide.createIcons(), 100);
+            });
+        }
     </script>
 </body>
 
